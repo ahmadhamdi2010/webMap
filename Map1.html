@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_be9f3780419ca6f708eefec21e1f975a {
+                #map_d10cd0e8d0e3894dfb8d3a7875e02e91 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_be9f3780419ca6f708eefec21e1f975a" ></div>
+            <div class="folium-map" id="map_d10cd0e8d0e3894dfb8d3a7875e02e91" ></div>
         
 </body>
 <script>
     
     
-            var map_be9f3780419ca6f708eefec21e1f975a = L.map(
-                "map_be9f3780419ca6f708eefec21e1f975a",
+            var map_d10cd0e8d0e3894dfb8d3a7875e02e91 = L.map(
+                "map_d10cd0e8d0e3894dfb8d3a7875e02e91",
                 {
                     center: [38.0, -100.0],
                     crs: L.CRS.EPSG3857,
@@ -61,10 +61,42 @@
 
         
     
-            var tile_layer_f122f1ae1f9cf2681a0c7feb227d0d80 = L.tileLayer(
+            var tile_layer_714feea7e2b5c1e7640bb359a78461e9 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_be9f3780419ca6f708eefec21e1f975a);
+            ).addTo(map_d10cd0e8d0e3894dfb8d3a7875e02e91);
         
+    
+            var feature_group_6769458a48b2a6fa3f7e514d4d54c200 = L.featureGroup(
+                {}
+            ).addTo(map_d10cd0e8d0e3894dfb8d3a7875e02e91);
+        
+    
+            var marker_c441bd94212d885ec33c39760dacceba = L.marker(
+                [38.2, -99.1],
+                {}
+            ).addTo(feature_group_6769458a48b2a6fa3f7e514d4d54c200);
+        
+    
+            var icon_60fbdfc8c01dcded3df4cfd06289d015 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c441bd94212d885ec33c39760dacceba.setIcon(icon_60fbdfc8c01dcded3df4cfd06289d015);
+        
+    
+        var popup_b2a4c4f51b66e90999f467b6167de8c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05ce6053430c678463db0b13a72c55ce = $(`<div id="html_05ce6053430c678463db0b13a72c55ce" style="width: 100.0%; height: 100.0%;"> HI am a market</div>`)[0];
+                popup_b2a4c4f51b66e90999f467b6167de8c8.setContent(html_05ce6053430c678463db0b13a72c55ce);
+            
+        
+
+        marker_c441bd94212d885ec33c39760dacceba.bindPopup(popup_b2a4c4f51b66e90999f467b6167de8c8)
+        ;
+
+        
+    
 </script>
 </html>
